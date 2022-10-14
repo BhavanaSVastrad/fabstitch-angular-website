@@ -1,0 +1,58 @@
+<div class="container">
+    <div class="body d-md-flex ">
+        <div class="box-1 mt-md-0 mt-5" >
+            <!-- <img src="https://st2.depositphotos.com/33984282/41970/i/450/depositphotos_419709560-stock-photo-sewing-logo-vintage-sewing-machine.jpg"
+                class="" alt="" > -->
+                <figure class="snip0015">
+                    <img src="https://st2.depositphotos.com/33984282/41970/i/450/depositphotos_419709560-stock-photo-sewing-logo-vintage-sewing-machine.jpg" alt="sample38"/>
+                    <figcaption>
+                        <h2 style="font-family: cursive; font-weight:bolder;">FabStitch </h2>
+                        <p>FabStitch offers an online tailoring experience with free pick-up and delivery in Bangalore. 
+                            We provide stitching services with customisable designs for salwar suits, blouses, kurtas, 
+                            bottoms, western wear 
+                            and kids wear as per customers measurement at doorstep.</p>
+                        <a href="#"></a>
+                    </figcaption>			
+                </figure>
+             
+        </div>
+        <!-- <div class=" box-2 d-flex flex-column h-100"> -->
+            <div class="login-form">
+                <form class="mt-5" [formGroup]="loginForm" (ngSubmit)="login()">
+                    <p style="font-weight: bolder; font-size:xx-large; color: antiquewhite; "> <marquee behavior="" direction="">LOGIN</marquee> </p>
+                    
+                    <div class="mt-1">
+                        <br>
+                        <br>
+                    <div class="form-group">
+                        <input type="email" class="form-control" name="useremail" formControlName="useremail" placeholder=" User Email" style="color: rgb(78, 239, 191);">
+                        <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['required']">Email is required</label>
+                        <label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['useremail']">Email must be a valid email address</label>
+                    </div>
+                    <br>
+                    <br>
+                
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" formControlName="password" placeholder=" Password" style="color: rgb(78, 239, 191);">
+                        <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">Password is required</label>
+                        <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['minlength']">Password must be at least 6 characters</label>
+                    </div>
+                    <br>
+                    <button type="submit" href="" >Login</button>
+                    
+                    <div class="ms-fs-12 text-center ms-mt-x ms-mb-m forgot">
+                        <p style="padding-top:30px">
+                            <a href="register" class="secondary ng-binding"  style="color:rgb(252, 134, 134) ; font-weight:bold;">
+                                Don't have an account? Register...
+                            </a>
+                        </p><p>
+                        </p>
+                    </div>
+                </div>
+            </form>
+        </div>
+        
+        </div>
+       
+    </div>
+<!-- </div> -->

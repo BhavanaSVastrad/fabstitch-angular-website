@@ -1,0 +1,19 @@
+body{
+    background-color: rgb(234, 233, 233);
+    background-attachment: fixed;
+    background-size: cover;
+    padding:20px;
+}
+#id{
+    background-color: black;
+}
+.home:hover {
+    opacity: 0.5;
+    color: rgb(3, 1, 18);
+
+}
+.button:hover {
+    opacity: 0.5;
+    color: rgb(3, 1, 18);
+
+}

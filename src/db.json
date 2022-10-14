@@ -1,0 +1,60 @@
+{
+  "users": [
+    {
+      "username": "Admin",
+      "useremail": "admin@gmail.com",
+      "password": "admin@123",
+      "mobile": "9898989898",
+      "id": 3
+    },
+    {
+      "username": "Bhavana",
+      "useremail": "bhavanasvastrad@gmail.com",
+      "password": "Bhavana1830@",
+      "mobile": "8951897993",
+      "id": 6
+    },
+    {
+      "username": "Bhavana",
+      "useremail": "b@gmail.com",
+      "password": "Bhavana2000@",
+      "mobile": "",
+      "id": 7
+    },
+    {
+      "username": "sahana",
+      "useremail": "sahana@gmail.com",
+      "password": "Sahana11",
+      "mobile": "9164164511",
+      "id": 8
+    },
+    {
+      "username": "Bhavana",
+      "useremail": "b@gmail.com",
+      "password": "Bhavana1830",
+      "mobile": "7145768989",
+      "id": 9
+    },
+    {
+      "username": "Bhavana",
+      "useremail": "b@gmail.com",
+      "password": "Bhavana1830",
+      "mobile": "7145768989",
+      "id": 10
+    },
+    {
+      "username": "Bhavana",
+      "useremail": "bhavanasvastrad@gmail.com",
+      "password": "mmmmmmm",
+      "mobile": "7145768989",
+      "id": 11
+    },
+    {
+      "username": "bghgghghhg",
+      "useremail": "a@gmail.com",
+      "password": "123456",
+      "mobile": "8694830444",
+      "id": 12
+    }
+  ]
+}

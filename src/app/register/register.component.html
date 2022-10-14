@@ -1,0 +1,86 @@
+<div class="container">
+    <div class="body d-md-flex ">
+        <div class="box-1 mt-md-0 mt-5" style="margin-left: 30px;">
+            <div class="login-form">
+
+
+                <form class="mt-1" [formGroup]="registerForm" (ngSubmit)="submitHandler()">
+                 <marquee behavior="" direction="" style="color: white; font-weight: bolder; font-size:25px;">SIGNUP </marquee>
+                  
+                    <br>
+                  <br>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="username" formControlName="username"
+                            placeholder="Enter Username" style="color: rgb(78, 239, 191);">
+                            <label class="error ng-binding" *ngIf="submitted && f['username'].errors?.['required']">Username
+                                is
+                                required</label>
+                            
+                                <label class="error ng-binding" *ngIf=" f['username'].errors?.['pattern']">
+                                    pattern does not match</label>
+                                    <label class="error ng-binding" *ngIf=" f['username'].errors?.['minlength']">
+                                       Minimum Length should be 6 characters</label>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="gmail" class="form-control" name="useremail" formControlName="useremail"
+                            placeholder="Enter email" style="color: rgb(78, 239, 191);">
+                        <label class="error ng-binding" *ngIf="submitted && f['useremail'].invalid">Email is required
+                        </label>
+                       
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="password" class="form-control" name="password" formControlName="password"
+                            placeholder="Enter password" style="color: rgb(78, 239, 191);">
+                    
+                        <label class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">Password
+                            is
+                            required</label>
+                        <label class="error ng-binding" *ngIf=" f['password'].errors?.['minlength']">Password must be at
+                            least 6 characters</label>
+                            <label class="error ng-binding" *ngIf=" f['password'].errors?.['pattern']">
+                                pattern does not match</label>
+                    </div>
+                    <br>
+                    <div class="form-group">
+                        <input type="text" class="form-control" name="mobile" formControlName="mobile"
+                            placeholder="Enter Mobile number" style="color: rgb(78, 239, 191);">
+                        <label class="error ng-binding" *ngIf="submitted && f['mobile'].errors?.['required']">Mobile number
+                            is
+                            required</label>
+                            <label class="error ng-binding" *ngIf="submitted && f['mobile'].errors?.['pattern']">Only Numbers are allowed</label>
+    
+                    </div>
+                    <br>
+                    <button type="submit" href="">Register</button>
+                    <div class="text-center ms-mt-x ms-mb-m register-already-account" style="padding-top:30px">
+                        <span class="ms-fs-12 ng-binding" style="background-color: black; color:rgb(103, 243, 124); font-weight: bold;">Already have an account?
+                            <a class="secondary ng-binding" href="login" style="color: rgb(136, 15, 217); font-weight: bold;">
+                                Login!
+                            </a>
+                        </span>
+                    </div>
+                </form>
+    
+            </div>
+                
+             
+        </div>
+        <figure class="snip0015">
+            <img src="https://st2.depositphotos.com/33984282/41970/i/450/depositphotos_419709560-stock-photo-sewing-logo-vintage-sewing-machine.jpg" alt="sample38"/>
+            <figcaption>
+                <h2 style="font-family: cursive; font-weight:bolder;">FabStitch </h2>
+               
+               <br> <p>FabStitch offers an online tailoring experience with free pick-up and delivery in Bangalore. 
+                    We provide stitching services with customisable designs for salwar suits, blouses, kurtas, 
+                    bottoms, western wear 
+                    and kids wear as per customers measurement at doorstep.</p>
+                <a href="#"></a>
+            </figcaption>			
+        </figure>
+
+        
+        </div>
+       
+    </div>
