@@ -1,54 +1,47 @@
-<body >
-    <ul>
-        <a href="#" style="margin-left: 450px; font-size: 30px;color: rgb(79, 200, 200);" class="home">HOME</a>
-        <a style="margin-left: 10px; font-size: 30px;color: rgb(52, 144, 144);">/CONTACT US</a>
-    </ul>
-    <div class="row" >
-        <div class="col-xl"style="background-color: white;margin:50px; width:1000px;">
-            <form action="" style=" width:100%;">
-                <div class="form-group">
-                    <h1 style="padding-top: 50px;padding-left: 20px;color: rgb(167, 167, 167);">Have Question? Feel free to contact us on</h1>
-                    <h2 style="padding-left: 20px;color: rgb(167, 167, 167);">+91-9902953403</h2>
-                </div>
     
-                <div class="form-group">
-                    <label style="color:rgb(0, 0, 0);padding-left: 20px;color:rgb(194, 194, 194);">Your Name(required)</label><br><br>
-                    <input type="text" name="fname" style="margin-left:20px;width: 500px;border-color: rgb(147, 236, 211);height: 30px;"required><br><br><br>
-                    <!--<label class="error ng-binding" *ngIf="submitted && f['username'].invalid">Name is required
-                    </label>-->
-                </div>
-    
-                <div class="form-group">
-                    <label style="color:rgb(0, 0, 0);padding-left: 20px;color:rgb(194, 194, 194);">Your Email(required)</label><br><br>
-                    <input type="text" name="fname" style="margin-left:20px;width: 500px;border-color: rgb(147, 236, 211);height: 30px;"required><br><br><br>
-                    <!--<label class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['useremail']">Email must be a valid email address
-                    </label>-->
-                </div>
-    
-                <div class="form-group">
-                    <label style="color:rgb(0, 0, 0);padding-left: 20px;color:rgb(194, 194, 194);">Subject</label><br><br>
-                    <input type="text" name="fname" style="margin-left:20px;width: 500px;border-color: rgb(147, 236, 211);height: 30px;"><br><br><br>
-                </div>
-    
-                <div class="form-group">
-                    <label style="color:rgb(0, 0, 0);padding-left: 20px;color:rgb(194, 194, 194);">Your Message</label><br><br>
-                    <textarea style="margin-left:20px;width: 500px;border-color: rgb(147, 236, 211);height: 200px;"></textarea><br><br><br>
-                </div>
-    
-                <div class="form-group">
+<body>
+    <div class="login-form" >
+        <ul>
+            <a href="#" style="font-size: 30px;color: rgb(79, 200, 200);margin-left: 500px;" class="home">HOME</a>
+            <a style="margin-left: 10px; font-size: 30px;color: rgb(52, 144, 144);">/CONTACT US</a>
+        </ul>
+        <div class="row">
+            <div class="col-xl"style="background-color: white;margin:50px;margin-left:90px;width:1300px;">
+            <form  [formGroup]="loginForm" (ngSubmit)="login()">
+
+            
+                <div class="col-xl">
+                    <h3 style="padding-top: 50px;padding-left: -100px;color: rgb(167, 167, 167);margin-left: 20px;">Have Question? Feel free to contact us on</h3>
+                    <h4 style="padding-left: 20px;color: rgb(167, 167, 167);">+91-9902953403</h4><br>
+                    <label style="color: grey;margin-left: 20px;">Your Name(required)</label><br>
+                    <input type="text"  name="password" formControlName="password"  style="color: rgb(0, 0, 0);margin-left: 20px;border-radius: 0px;width:550px;border-color:rgb(147, 236, 211)"><br>
+                    <label style="margin-left:20px ;" class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">Please fill the Required field</label><br>
+                    <br>
+                    <label style="color: grey;margin-left: 20px;">Your Email(required)</label><br>
+                    <input type="email"  name="useremail" formControlName="useremail"  style="color: rgb(0, 0, 0);margin-left: 20px;border-radius: 0px;width:550px;border-color:rgb(147, 236, 211)"><br>
+                    <label style="margin-left:20px ;"  class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['required']">Please fill the Required field</label><br>
+                        
+                    <br>
+                    <label style="color:grey;padding-left: 20px;">Subject</label><br>
+                    <input type="text" name="fname" style="margin-left:20px;border-color: rgb(147, 236, 211);height: 30px;border-radius: 0px;width:550px;padding: 20px;"><br><br><br>
+                        
+                    <label style="color:rgb(0, 0, 0);padding-left: 20px;color:grey;">Your Message</label><br><br>
+                    <textarea style="margin-left:20px;width:550px;border-color: rgb(147, 236, 211);height: 200px;"></textarea><br><br>
+                             
                     <label style="color:rgb(0, 0, 0);padding-left: 20px;color:rgb(194, 194, 194);">Enter This Code</label><br>
                     <h3 style="color:rgb(17, 226, 17);margin-left:30px;">6NMW</h3>
-                    <input type="text" maxlength="4"name="fname" style="margin-left:20px;border-color: rgb(147, 236, 211);height: 30px;"required><br><br><br>
+                    <input type="text" maxlength="4"name="fname" style="margin-left:20px;border-color: rgb(147, 236, 211);height: 30px;border-radius: 0px;width: 120px;margin-top: 10px;padding: 20px;"required><br>
+                    <label style="margin-left:20px ;"  class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['required']">Your entered code is Incorrect</label><br><br>
+                    <button type="submit" href="" style="border-radius:0px;background-color:rgb(38, 148, 117);color: white;margin-left: 20px;">Send</button>
+                    <br><br>
+                    <label style="margin-left:20px;color: rgb(182, 171, 20);border-color: rgb(176, 176, 16);"  class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['required']">Validation errors occurred. Please confirm the fields and submit it again.</label><br>
+                    <br><br>
                 </div>
-    
-                <button class="button"style="margin-left:20px;padding-left: 0px;border-color: rgb(147, 236, 211);color: rgb(0, 118, 118);background-color: white;height: 60px;width: 110px;">SEND</button>
-                <br><br>
-            
-            </form>
+                <div class="col-xl">
+
+                </div>
+                </form> 
+            </div>
         </div>
-        <div class="col-xl"></div>
     </div>
-    
-    </body>
-      
-    
+</body>
