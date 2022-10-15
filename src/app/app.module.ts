@@ -18,6 +18,8 @@ import { PageComponent } from './page/page.component';
 import { FabricsComponent } from './fabrics/fabrics.component';
 import { ContactComponent } from './contact/contact.component';
 
+
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +35,8 @@ import { ContactComponent } from './contact/contact.component';
     PageComponent,
     FabricsComponent,
     ContactComponent
+
+
   ],
   imports: [
     BrowserModule,

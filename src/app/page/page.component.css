@@ -1,20 +1,20 @@
 h1 {
     text-align: center;
-    color: rgb(85, 92, 107);
+    color: rgb(0, 0, 0);
     font-size: 25px;
     font-family: arial
 }
 
 h2 {
     text-align: center;
-    color: rgb(182, 196, 196);
+    color: rgb(0, 0, 0);
     font-size: 20px;
     font-family: arial;
 }
 
 h3 {
 
-    color: rgb(176, 178, 178);
+    color: rgb(0, 0, 0);
     font-size: 20px;
     font-family: arial;
     font-family: arial;
@@ -23,7 +23,7 @@ h3 {
 h4 {
     padding: 20px;
     text-align: left;
-    color: rgb(146, 155, 155);
+    color: rgb(14, 14, 14);
     font-size: 80px;
     border-top: white;
     font-family: 'Courier New', Courier, monospace;
@@ -37,7 +37,7 @@ body {
 p {
     font-size: 40px;
     font-family: 'Courier New', Courier, monospace;
-    color: rgb(182, 196, 196);
+    color: rgb(0, 0, 0);
 }
 
 #wrap {
@@ -72,7 +72,7 @@ p {
     font-size: 15px;
     padding: 2px;
     text-align: left;
-    color: rgb(198, 198, 201);
+    color: rgb(0, 0, 0);
     justify-content: left;
     font-family: 'Courier New', Courier, monospace;
     background: none;
@@ -83,7 +83,7 @@ p {
     font-size: 20px;
     padding: 2px;
     text-align: left;
-    color: rgb(198, 198, 201);
+    color: rgb(0, 0, 0);
     justify-content: left;
     font-family: 'Courier New', Courier, monospace;
     background: none;
@@ -106,7 +106,7 @@ p {
     font-size: 15px;
     padding: 2px;
     text-align: left;
-    color: rgb(198, 198, 201);
+    color: rgb(0, 0, 0);
     justify-content: left;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background: none;
@@ -148,7 +148,7 @@ a {
     font-size: 10px;
     padding: 40px;
     text-align: left;
-    color: rgb(198, 198, 201);
+    color: rgb(0, 0, 0);
     justify-content: left;
     font-family: 'Courier New', Courier, monospace;
     background: none;
@@ -159,7 +159,7 @@ a {
     font-size: 12px;
     font-family: 'Courier New', Courier, monospace;
     background: none;
-    color: rgb(170, 170, 170);
+    color: rgb(0, 0, 0);
     border: none;
 }
 
@@ -172,7 +172,7 @@ a {
     font-size: 10px;
     font-family: 'Courier New', Courier, monospace;
     background: none;
-    color: rgb(182, 196, 196);
+    color: rgb(0, 0, 0);
     border-style: solid;
     border-color: darkgray;
     border-radius: 0.2cm;
@@ -189,7 +189,7 @@ a {
     padding: 30px;
     text-align: left;
     justify-content: left;
-    color: rgb(198, 198, 201);
+    color: rgb(0, 0, 0);
     font-family: 'Courier New', Courier, monospace;
     background: none;
     border: none;
@@ -213,7 +213,7 @@ a {
 
 a {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(218, 217, 217);
+    color: rgb(0, 0, 0);
     font-size: 15px;
     justify-content: left;
 }
@@ -222,7 +222,7 @@ a {
     font-size: 5px;
     font-family: 'Courier New', Courier, monospace;
     background: none;
-    color: rgb(182, 196, 196);
+    color: rgb(0, 0, 0);
     border: none;
 }
 
@@ -236,7 +236,7 @@ a {
     font-size: 15px;
     padding: 30px;
     text-align: left;
-    color: rgb(198, 198, 201);
+    color: rgb(0, 0, 0);
     justify-content: left;
     font-family: 'Courier New', Courier, monospace;
     background: none;
@@ -261,7 +261,7 @@ a {
     font-size: 15px;
     font-family: 'Courier New', Courier, monospace;
     background: none;
-    color: rgb(182, 196, 196);
+    color: rgb(0, 0, 0);
     border-style: solid;
     border-color: darkgray;
     border-radius: 0.2cm;
