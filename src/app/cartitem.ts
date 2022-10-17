@@ -6,4 +6,5 @@ export class Cartitem {
     img:string|undefined;
     quantity:number|any;
     totalPrice:number|any;
+    subtotal:number|any;
 }

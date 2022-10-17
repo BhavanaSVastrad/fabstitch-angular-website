@@ -17,6 +17,9 @@ import { DesignComponent } from './design/design.component';
 import { PageComponent } from './page/page.component';
 import { FabricsComponent } from './fabrics/fabrics.component';
 import { ContactComponent } from './contact/contact.component';
+import { ProductComponent } from './product/product.component';
+import { ViewproductComponent } from './viewproduct/viewproduct.component';
+import { CartItemsComponent } from './cartitem/cartitem.component';
 
 
 
@@ -34,7 +37,10 @@ import { ContactComponent } from './contact/contact.component';
     DesignComponent,
     PageComponent,
     FabricsComponent,
-    ContactComponent
+    ContactComponent,
+    ProductComponent,
+    ViewproductComponent,
+    CartItemsComponent
 
 
   ],

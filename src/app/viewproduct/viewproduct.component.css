@@ -1,0 +1,62 @@
+.card{
+    /* margin: 50px; */
+    height: 700px;
+}
+img{
+    height: 470px;
+    margin-top: 7%;
+    margin-left: 7%;
+}
+.heading{
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 1.5em;
+    line-height: 32px;
+    font-weight: 200;
+    color: #5b7890;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+.price{
+    color: #77a464;
+    font-size: 1.25em;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+.tag{
+    font-weight: bold;
+    line-height: 2;
+    color: #1abc9c;
+    text-align: center;
+    white-space: nowrap;
+}
+.description{
+    font-family: "Open Sans", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 400;
+    color: #5a6c7b;
+    margin-bottom: 35px;
+    margin-top: 20px;
+}
+.select{
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+}
+.contain{
+    background-color:rgb(244, 241, 241);
+    padding-bottom: 70px;
+}
+a{
+    color: #1abc9c;
+    text-decoration: none;
+    
+}
+.navigation{
+    font-size: 30px;
+    color: gray;
+    text-align: center;
+    margin: 15px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}

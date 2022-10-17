@@ -1,0 +1,113 @@
+<body>
+    <ul>
+        <a href="#" style="margin-left: 550px; font-size: 30px;color: rgb(79, 200, 200);" class="home"><b>HOME</b></a>
+        <a style="margin-left: 10px; font-size: 30px;color: rgb(52, 144, 144);"><b>/CART</b></a>
+    </ul>  
+    <div style="background-color: white;margin:50px;">
+      <div class="container">
+      
+      <br>  <!-- <h1>Grand Total :  {{totalPrice(cart)|currency:'INR':'symbol':'3.0'}}</h1> -->
+        <hr>
+        <div class="row">
+          
+          <div class="col-sm">
+            <h3></h3>
+          </div>
+          <div class="col-sm">
+            <h3></h3>
+          </div>
+          <div style="margin-left: -260px;" class="col-sm">
+            <h3>Product </h3>
+          </div>
+          <div style="margin-left: 100px;" class="col-sm">
+            <h3>Price</h3>
+          </div>
+          <div class="col-sm">
+            <h3>Quantity</h3>
+          </div>
+          <div class="col-sm">
+            <h3>Total</h3>
+          </div>
+          
+          
+        </div>
+        <hr>
+        <div class="container" *ngFor="let item of cart">
+          <div class="row">
+            <div class="col-sm">
+              <!-- <div style="margin-left: 10px;padding-top: 40px;">{{item.totalPrice}}</div> -->
+              <button class="cross" class="btn m-3" (click)="delete(item)"><i class="cross" style="color: rgb(255, 255, 255);background-color: red;"class="fa-solid fa-square-xmark"></i></button>
+            </div>
+            <div style="margin-left: -150px;padding: 40px;padding-top: 50px;" class="col-sm">
+              <img src={{item.img}}>
+            </div>
+            <div style="margin-left: -130px;" class="col-sm">
+              <h3 style="color:rgb(34, 173, 173);"> {{item.pname}}</h3>
+              <!-- <h3> {{item.pdesc}}</h3> -->
+              <p style="color: grey;">Note: Price may vary upon customization. Please call our customer care on +91-9902953403 for final price(s)</p>
+            </div>
+            
+            <div style="margin-left: 100px;padding-top: 50px;"class="col-sm">
+              <h3> {{item.price}}</h3>
+            </div>
+            <div style="padding-top: 50px;" class="col-sm">
+              <!-- <h3>{{item.quantity}}</h3> -->
+              <input type="number" name="quantity" [(ngModel)]="item.quantity" style="width:50px;border-color: rgb(84, 235, 175);" min="1" max="25">
+            </div>
+            <div style="padding-top: 50px;" class="col-sm">
+              <h3> {{subtotal(cart)|currency:'INR'}}</h3>
+             
+            </div>
+             
+          </div>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="col-lg-7">
+            <div>
+              <input type="text" style="width: 300px;height: 40px;"placeholder="coupon code"><br><br>
+              <input type="submit" class="coupon"style="margin-left: 190px;background-color: black;color: white;padding: 5px;border-radius: 2px;"class="button" name="update_cart" value="Apply Coupon">
+            </div><br>
+           <a class="btn btn-dark m-3" style="background-color:rgb(46, 108, 46);color:white;" (click)="onClick()" >Shop More</a>
+            <a class="btn btn-dark m-3" style="background-color:rgb(53, 117, 53);color:white;"  href="https://rzp.io/i/C6vaJ6kg" target="_blank" >CheckOut</a>
+          </div>   
+          <div class="col-lg-5">
+            <div>
+             <h3> Total: {{totalPrice(cart)|currency:'INR'}}</h3><br>
+            <input type="submit" class="coupon"style="margin-left: 230px;background-color: black;color: white;padding: 5px;border-radius: 2px;"class="button" name="update_cart" value="Update Cart">
+              <br>
+            </div><br>
+          </div><hr>
+        </div>
+      </div>
+  
+      <!--cart total-->
+      <h2 style="margin-left: 555px;color: rgb(174, 174, 174);">Cart Totals</h2>
+      <h3 style="margin-left: 560px;color: rgb(0, 0, 0);">Subtotal {{totalPrice(cart)}}</h3>
+      <h3 style="margin-left: 560px;color: rgb(154, 154, 154);">________________________________________</h3>
+      <h2 style="margin-left: 560px;color: rgb(0, 0, 0);">Total :{{totalPrice(cart)}}</h2>
+      <a class="home" class="checkout" class="btn btn-danger m-3" href='checkout' target="_blank" style="margin-bottom:20px;border-radius:3px;padding:7px;width:530px;background-color:rgb(215, 44, 44);color:white;border-color:rgb(215, 44, 44);font-size: 17px;" >Proceed to Checkout</a>
+  </div>
+  
+  <div style="background-color: white;"><br><br><br><br>
+    <div style="background-color: rgb(28, 174, 148);" class="row">
+        <br><br><br>
+        <div class="col-sm">
+            <p style="color:white;margin-left:70px;">Copyright 2015 - 2022 © fabstitch.in</p>
+        </div>
+        <div class="col-sm">
+            <ul>
+                <a href="#" style=" color: rgb(255, 255, 255);" class="home">FAQ</a>
+                |
+                <a href="terms-of-services" style=" color: rgb(255, 255, 255);">Terms of Services </a>
+                |
+                <a href="privacy-policy" style="color: rgb(255, 255, 255);">Privacy Policy </a>
+                | 
+                <a style="color: rgb(255, 255, 255);">Call us @ +91-9902953403</a>
+            
+            </ul> 
+  
+        </div>
+    </div>
+  </div>
+  </body>

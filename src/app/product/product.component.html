@@ -1,0 +1,52 @@
+<!-- 
+
+<div class="container mt-3 mb-3">
+    <div class="row">
+        <div class="col"  >
+            <div class="card " >
+                    <img   [src]="products.img" class="card-img-top" alt="product"/>
+                    <div class="card-body" style="text-align: center;">
+                        <h6>{{products.id}}: {{products.pname| uppercase}} </h6>
+  
+                            <b>{{products.price}}</b>  <br>
+                          
+                            <a  class="btn btn-dark mt-2" [routerLink]="['/viewProduct',products.id]">Select Options</a>
+                    </div>
+            </div>
+        </div>
+    </div>
+  </div> -->
+
+  <div class="contain">
+    <div class="heading"><a routerLink="">Home</a>&nbsp; /&nbsp;Services</div>
+  
+    <div class="container" >
+      <div class="row">
+        <div class="col-3" *ngFor="let products of productsL">
+          <!-- <app-products [products]="item"> </app-products> -->
+          <div class="mt-3 mb-3">
+            <div class="col">
+              <div class="card">
+                <img [src]="products.img" class="card-img-top" alt="product" />
+                <div class="card-body" >
+                  <p> {{ products.pname}}</p>
+                  <p class="price">{{ products.price1 }}</p>
+                  <!-- {{products.pdesc}} <br> -->
+                  <a style="color: white;"
+                    class="btn btn-dark mt-2"
+                    [routerLink]="['/viewProduct', products.id]"
+                    >Select Options</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   
+  </div>
+  
+
+
+

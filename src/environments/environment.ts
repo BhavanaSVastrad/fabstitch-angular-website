@@ -5,7 +5,9 @@
 export const environment = {
   production: true,
   userapi:"http://localhost:3000/users",
-  cartapi:"https://heroku-json-server-fakedbs.herokuapp.com/cart",
+  cartapi:"http://localhost:3000/cart",
+  productapi:"http://localhost:3000/product"
+  // cartapi:"https://heroku-json-server-fakedbs.herokuapp.com/cart"
 };
 
 /*

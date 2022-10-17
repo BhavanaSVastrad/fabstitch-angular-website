@@ -10,8 +10,9 @@ import { DesignComponent } from './design/design.component';
 import { PageComponent } from './page/page.component';
 import { FabricsComponent } from './fabrics/fabrics.component';
 import { ContactComponent } from './contact/contact.component';
-
-
+import { ProductComponent } from './product/product.component';
+import { ViewproductComponent } from './viewproduct/viewproduct.component';
+import { CartItemsComponent } from './cartitem/cartitem.component';
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'contact',component:ContactComponent},
@@ -22,7 +23,10 @@ const routes: Routes = [
   {path:'register',component:RegisterComponent},
    {path:'login',component:LoginComponent},
    {path:'terms', component:TermsComponent},
-   {path:'faq',component:FaqComponent}
+   {path:'faq',component:FaqComponent},
+   {path:'viewProduct/:id',component:ViewproductComponent}, 
+   {path:'bookstitch',component:ProductComponent},
+   {path:'order',component:CartItemsComponent}
 ];
 
 @NgModule({

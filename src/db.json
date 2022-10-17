@@ -56,5 +56,83 @@
       "mobile": "8694830444",
       "id": 12
     }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "pname": "Kids Wear Stitch",
+      "price": 700,
+      "price1": "Price On Call",
+      "pdesc": "Being one of the renowned firms in the industry, we involved in providing a high-quality array of Kids Wear stitching.",
+      "img": "http://www.fabstitch.in/wp-content/uploads/2015/09/tutu-dress-150x150.jpg"
+    },
+    {
+      "id": 2,
+      "pname": "Blouse Stitch",
+      "price": 1500,
+      "price1": "650-3000",
+      "pdesc": "Reckoned as one of the involved companies of the industry, we are extremely immersed in providing Ladies Blouse stitching.",
+      "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/Blouse-200x200.jpg"
+    },
+    {
+      "id": 3,
+      "pname": "Salwar suit Stitch",
+      "price": 1000,
+      "price1": "Price On Call",
+      "pdesc": "Being one of the renowned firms in the industry, we involved in providing a high-quality array of salwar stitching.",
+      "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/Anarkali-Custmized-200x200.jpg"
+    },
+    {
+      "id": 4,
+      "pname": "Lehenga Stitch",
+      "price": 5000,
+      "price1": "Price On Call",
+      "pdesc": "Reckoned as one of the involved companies of the industry, we are extremely immersed in providing Ladies Lehenga stitch.",
+      "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/lehenga-200x200.jpg"
+    },
+    {
+      "id": 5,
+      "pname": "Designer Blouse stitching",
+      "price": 2500,
+      "price1": "Price On Call",
+      "pdesc": "Reckoned as one of the involved companies of the industry, we are extremely immersed in providing Ladies Blouse stitch.",
+      "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/womens-cloth-stitching-11-200x200.png"
+    },
+    {
+      "id": 6,
+      "pname": "Western Wear Stitch",
+      "price": 3000,
+      "price1": "2000-5000",
+      "pdesc": "Reckoned as one of the involved companies of the industry, we are extremely immersed in providing Ladies Western wear stitch",
+      "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/western_dresses-200x200.png"
+    },
+    {
+      "id": 7,
+      "pname": "Alteration services",
+      "price": 800,
+      "price1": "100-2000",
+      "pdesc": "Backed by our skilled professionals, we are involved in providing Alteration Stitching Service for various dresses",
+      "img": "http://www.fabstitch.in/wp-content/uploads/2015/11/Sewing-and-Alteration-150x150.jpg"
+    }
+  ],
+  "cart": [
+    {
+      "id": 2,
+      "pname": "Blouse Stitch",
+      "pdesc": "Reckoned as one of the involved companies of the industry, we are extremely immersed in providing Ladies Blouse stitching.",
+      "price": 1500,
+      "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/Blouse-200x200.jpg",
+      "quantity": 8,
+      "subtotal": 1
+    },
+    {
+      "id": 3,
+      "pname": "Salwar suit Stitch",
+      "pdesc": "Being one of the renowned firms in the industry, we involved in providing a high-quality array of salwar stitching.",
+      "price": 1000,
+      "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/Anarkali-Custmized-200x200.jpg",
+      "quantity": 1,
+      "subtotal": 1
+    }
   ]
 }
