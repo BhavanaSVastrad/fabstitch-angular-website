@@ -20,6 +20,9 @@ import { ContactComponent } from './contact/contact.component';
 import { ProductComponent } from './product/product.component';
 import { ViewproductComponent } from './viewproduct/viewproduct.component';
 import { CartItemsComponent } from './cartitem/cartitem.component';
+import { CheckoutComponent } from './checkout/checkout.component';
+import { PrivacyComponent } from './privacy/privacy.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 
@@ -40,7 +43,10 @@ import { CartItemsComponent } from './cartitem/cartitem.component';
     ContactComponent,
     ProductComponent,
     ViewproductComponent,
-    CartItemsComponent
+    CartItemsComponent,
+    CheckoutComponent,
+    PrivacyComponent,
+    FooterComponent
 
 
   ],

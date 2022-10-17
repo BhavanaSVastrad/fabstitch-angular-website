@@ -1,0 +1,107 @@
+<body>
+    <ul>
+        <a href="home" style="margin-left: 450px; font-size: 30px;color: rgb(79, 200, 200);" class="home">HOME</a>
+        <a style="margin-left: 10px; font-size: 30px;color: rgb(52, 144, 144);">/CHECKOUT</a>
+    </ul>  
+  
+    <div style="background-color: white;margin:50px;"><br>
+      <div class="container">
+        <ul style="background-color:rgb(234, 233, 233);padding: 10px;">
+            <a >Returning Customer?</a>
+            <a class="link"style="color:  rgb(79, 200, 200);"href="#">Click here to login</a>
+        </ul>
+        <ul style="background-color:rgb(234, 233, 233);padding: 10px; ">
+            <a >Have a coupon?</a>
+            <a class="link"style="color:  rgb(79, 200, 200);"href="#">Click here to enter your code</a>
+        </ul><br>
+  
+        <div class="row">
+            <div class="col-sm">
+                <h3 style="color: rgb(44, 209, 209);">Billing Details</h3>
+                <div class="row">
+                    <div class="col-sm">
+                        <label style="padding-top:10px;color:grey;font-size: large;"><b>First name</b></label>
+                        <abbr style="color: red;"class="required" title="required">*</abbr><br>
+                        <input type="text" style="width: 250px;padding: 6px;margin-top:10px;"required>
+                        
+                    </div>
+                    <div class="col-sm">
+                        <label style="padding-top:10px;color:grey;font-size: large;"><b>Last name</b></label>
+                        <abbr style="color: red;"class="required" title="required">*</abbr><br>
+                        <input type="text" style="width: 250px;padding: 6px;margin-top:10px;"required>
+                    </div>
+                </div>
+                <label style="color:grey;font-size: large;padding-top:10px;"><b>Company Name</b></label>
+                <input type="text" style="width: 530px;margin-top:10px;padding: 6px;">
+                <div class="row">
+                    <div class="col-sm">
+                        <label style="padding-top:10px;color:grey;font-size: large;"><b>Email Address</b></label>
+                        <abbr style="color: red;"class="required" title="required">*</abbr><br>
+                        <input type="email" style="width: 250px;padding: 6px;margin-top:10px;"required>
+                    </div>
+                    <div class="col-sm">
+                        <label style="padding-top:10px;color:grey;font-size: large;"><b>Phone</b></label>
+                        <abbr style="color: red;"class="required" title="required">*</abbr><br>
+                        <input type="number" style="width: 250px;padding: 6px;margin-top:10px;"required>
+                    </div>
+                </div>
+                <label style="padding-top:10px;color:grey;font-size: large;"><b>Country</b></label>
+                <abbr style="color: red;"class="required" title="required">*</abbr><br>
+                <label style="padding-top:10px;color:grey;font-size: large;"><b>India</b></label><br>
+                <label style="padding-top:10px;color:grey;font-size: large;"><b>Address</b></label>
+                <abbr style="color: red;"class="required" title="required">*</abbr><br>
+                <input type="address" style="width: 530px;padding: 6px;margin-top:10px;"required placeholder="Street address">
+                <input type="address" style="width: 530px;padding: 6px;margin-top:10px;"required placeholder="Apartment, suite, unit etc. (optional)">
+                <label style="padding-top:10px;color:grey;font-size: large;"><b>Town/City</b></label>
+                <abbr style="color: red;"class="required" title="required">*</abbr><br>
+                <input type="text" style="width: 530px;padding: 6px;margin-top:10px;"required placeholder="Town/city">
+                <div class="row">
+                    <div class="col-sm">
+                        <label style="padding-top:10px;color:grey;font-size: large;"><b>State/Country</b></label>
+                        <abbr style="color: red;"class="required" title="required">*</abbr><br>
+                        <select style="width: 250px;padding: 6px;margin-top:10px;" id="country-state" name="country-state">
+                            <option value="KA">Karnataka</option>
+                            <option value="OT">Others</option>
+                        </select>
+                    </div>
+                    <div class="col-sm">
+                        <label style="padding-top:10px;color:grey;font-size: large;"><b>Postcode/Zip</b></label>
+                        <abbr style="color: red;"class="required" title="required">*</abbr><br>
+                        <input type="text" style="width: 250px;padding: 6px;margin-top:10px;"required placeholder="Postcode/zip">
+                    </div>
+                </div>
+                <input type="checkbox" value="msg"><label style="padding-top:10px;color:grey;font-size: large;padding-left: 10px;"> Get our news by sms</label><br>
+                <input type="checkbox" value="msg"><label style="padding-top:10px;color:grey;font-size: large;padding-left: 10px;"> Create an account?</label>
+                <h3 style="color: rgb(44, 209, 209);padding-top:10px;">Your Orders</h3>
+  
+  
+            </div>
+            <div class="col-sm">
+                <h3 style="color: rgb(44, 209, 209);">Additional Information</h3>
+                <label style="padding-top:10px;color:grey;font-size: large;"><b>Pickup Date</b></label>
+                <abbr style="color: red;"class="required" title="required">*</abbr><br>
+                <input style="width: 540px;height:40px;margin-top:10px;" type="date" required placeholder="select a pickup date">
+                <h5 style="padding-top:10px;color:grey;">Please choose a date for your Pickup.</h5>
+                <h3 style="color: rgb(44, 209, 209);padding-top: 10px;">Additional Information</h3>
+                <h5 style="padding-top:10px;color:grey;">Other notes</h5>
+                <textarea style="width: 540px;height:150px;" type="address" placeholder="Notes about your order,e.g. special notes for delivery."></textarea>
+            </div>
+        </div>
+        
+  
+        
+    </div>
+    <ul>
+        <input type="checkbox" value="msg"><label style="padding-top:10px;color:grey;font-size: large;padding-left: 10px;">
+        <a style="margin-left: 10px; color: rgb(52, 144, 144);">I've read the </a>
+        <a href='terms-of-services' style=" color: rgb(79, 200, 200);" class="home">/terms and conditions</a>
+    </label>
+    </ul> 
+    <a class="home" class="checkout" class="btn btn-danger m-3" href='cartitem' target="_blank"style="margin-bottom:20px;border-radius:3px;padding:3px;width:130px;background-color:rgb(215, 44, 44);color:white;border-color:rgb(215, 44, 44);font-size: 17px;" >Place Order</a>
+    </div>
+  
+  </body>  
+
+  <br>
+<br>
+<app-footer></app-footer>

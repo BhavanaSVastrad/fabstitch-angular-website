@@ -1,0 +1,182 @@
+.home:hover {
+    opacity: 0.7;
+    color: rgb(3, 1, 18);
+
+}
+body{
+    background-color: rgb(234, 233, 233);
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+/*
+h1{
+    text-align:center;
+    color:rgb(85, 92, 107);
+    font-size: 25px;
+    font-family  :arial}
+  h2{
+    text-align:center;
+    color:rgb(182, 196, 196);
+    font-size: 20px;
+    font-family: arial;
+  }
+  h3{
+  
+    color:rgb(176, 178, 178);
+    font-size: 20px;
+    font-family: arial;
+      font-family:arial;
+  }
+  h4{
+      padding: 20px;
+      text-align: left;
+      color:rgb(146, 155, 155);
+      font-size: 80px;
+      border-top: white;
+      font-family: 'Courier New', Courier, monospace;
+      font-family: 'Courier New', Courier, monospace;
+  }
+  body{background-color: #eff0f0;}
+  p{font-size: 40px;
+    font-family: 'Courier New', Courier, monospace;
+    color:rgb(182, 196, 196) ;}
+  
+  #wrap {
+      width: 80%;
+      margin: auto;
+      background: #fff;
+      overflow: hidden;
+      padding: 15px;}
+      
+  * {
+      box-sizing: border-box;
+    }
+    
+    .column1 {
+      float: left;
+      width: 70%;
+      padding: 100px;
+      height: 50%; 
+      
+    }
+     
+    .column2 {
+      float: right;
+      width: 30%;
+      padding: 10px;
+      height: 100%; 
+    }
+    .editbtn1{font-size:  15px; padding: 2px; text-align: left;
+      color: rgb(198, 198, 201); justify-content: left;
+      font-family:'Courier New', Courier, monospace;
+      background: none;
+      border: none;}
+      .editbtn1:hover{font-size:  20px; padding: 2px; text-align: left;
+          color: rgb(198, 198, 201); justify-content: left;
+          font-family:'Courier New', Courier, monospace; 
+      background: none;
+      border: none; background-color: rgb(90, 181, 113);
+        }
+        .b{font-size:  10px; padding: 2px; text-align: left;
+          color: rgb(111, 176, 67); justify-content: left;
+          font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+      background: none;
+      border: none;}
+  .editb{font-size:  15px; padding: 2px; text-align: left;
+      color: rgb(198, 198, 201); justify-content: left;
+      font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+  background: none;
+  border: none;}
+  .editb:hover{
+      font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+      color: green;}
+    
+      .editb2{font-size:  10px; padding: 2px; text-align: left;
+   justify-content: left;
+          font-family :'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+      background: none;color: green;
+      border: none;}
+       
+      p{font-size: 12px ;}
+   a{ padding: 10px 3px;
+  font-size: 30px;}
+  
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    .btn{font-size:  10px; padding: 40px; text-align: left;
+      color: rgb(198, 198, 201); justify-content: left;
+      font-family:'Courier New', Courier, monospace;
+  background: none;
+  border: none;}
+  .btn4{font-size: 12px;  font-family: 'Courier New', Courier, monospace;
+    background: none;color:rgb(170, 170, 170) ;
+    border: none;}
+  .btn4:hover{
+      background-color: rgb(67, 183, 96);
+      border:none;   }
+  .btn2{font-size: 10px;  font-family: 'Courier New', Courier, monospace;background: none;color:rgb(182, 196, 196) ;
+      border-style:solid; 
+  border-color: darkgray;
+  border-radius: 0.2cm;
+   
+  margin: 1px;
+  }
+  .btn2:hover{ background-color: rgb(67, 183, 96);}
+        
+  .btn3{font-size:  10px; padding: 30px;  text-align: left; justify-content: left;
+      color: rgb(198, 198, 201); 
+      font-family:'Courier New', Courier, monospace;
+      background: none;
+      border: none;}
+  
+      .btn3:hover{font-size:  10px; padding: 30px; text-align: left;
+          color: rgb(198, 198, 201); justify-content: left;
+          font-family:'Courier New', Courier, monospace; 
+      background: none;
+      border: none; background-color: rgb(67, 183, 96);
+        }
+  .h6{padding-top:0px;}
+        
+  a{font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(218, 217, 217);font-size: 15px;
+    justify-content: left;}
+  
+    .btn1{font-size: 5px;  font-family: 'Courier New', Courier, monospace;
+      background: none;color:rgb(182, 196, 196) ;
+      border: none;}
+  .btn1:hover{
+        background-color: rgb(67, 183, 96);
+        border:none;   }
+  
+     
+        .editbtn3{font-size:  15px; padding: 30px; text-align: left;
+          color: rgb(198, 198, 201); justify-content: left;
+          font-family:'Courier New', Courier, monospace;
+          background: none;
+          border: none;}
+          .editbtn3:hover{font-size:  15px; padding: 20px; text-align: left;
+              color: rgb(198, 198, 201); justify-content: left;
+              font-family:'Courier New', Courier, monospace; 
+          background: none;
+          border: none; background-color: rgb(67, 183, 96);
+            }
+            
+  
+  
+            .btn5{font-size: 15px;  font-family: 'Courier New', Courier, monospace;background: none;color:rgb(182, 196, 196) ;
+              border-style:solid; 
+          border-color: darkgray;
+          border-radius: 0.2cm;
+          padding: 2px;
+          margin: 10px;
+          }
+          .btn5:hover{ background-color:transparent;
+              border-color: green;
+          color: green;}
+          
+*/

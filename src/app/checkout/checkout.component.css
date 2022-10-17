@@ -1,0 +1,15 @@
+.home:hover {
+    opacity: 0.7;
+    color: rgb(3, 1, 18);
+
+}
+body{
+    background-color: rgb(234, 233, 233);
+    background-attachment: fixed;
+    background-size: cover;
+    padding:20px;
+}
+.link:hover{
+    opacity: 0.7;
+    color: rgb(3, 1, 18);
+}
