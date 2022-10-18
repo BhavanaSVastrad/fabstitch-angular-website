@@ -23,6 +23,8 @@ import { CartItemsComponent } from './cartitem/cartitem.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { PrivacyComponent } from './privacy/privacy.component';
 import { FooterComponent } from './footer/footer.component';
+import { HomeProductComponent } from './home-product/home-product.component';
+import { ReviewComponent } from './review/review.component';
 
 
 
@@ -46,7 +48,9 @@ import { FooterComponent } from './footer/footer.component';
     CartItemsComponent,
     CheckoutComponent,
     PrivacyComponent,
-    FooterComponent
+    FooterComponent,
+    HomeProductComponent,
+    ReviewComponent
 
 
   ],

@@ -1,111 +1,140 @@
 <div class="contain">
-    <div class="navigation">
-      <a routerLink="">Home</a>/ <a href="bookstitch" >Services</a>/Stitching
-    </div>
-  
-    <div class="container">
-      <div class="card">
-        <div class="row" *ngFor="let item of productData">
-          <div class="col-md-5">
-            <img [src]="item.img" alt="..." />
-          </div>
-          <div class="col-md-7">
-            <div class="card-body" style="margin-top: 5%; margin-left: 10%">
-              <p class="card-text heading">{{ item.pname }}</p>
-              <p>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i
-                ><i class="fa-solid fa-star"></i>
-              </p>
-              <p class="card-text heading price">{{ item.price1 }}</p>
-              <p class="card-text description">{{ item.pdesc }}</p>
-              <p>
-                <label class="tag">Size Options</label>&nbsp;&nbsp;&nbsp;
-                <select name="size" id="size">
-                  <option value="choose" selected class="select">
-                    Choose Option
-                  </option>
-                  <option value="s" class="select">S</option>
-                  <option value="m">M</option>
-                  <option value="l">L</option>
-                  <option value="xl">XL</option>
-                  <option value="xxl">XXL</option>
-                </select>
-              </p>
-              <p class="price">{{item.price}}</p>
-              <br />
-              <input
-                type="number"
-                name="quantity"
-                [(ngModel)]="quantity"
-                style="width: 75px"
-                min="1"
-                max="25"
-              />&nbsp;
-              <button
-                class="btn btn-danger"
-                style="width: 108px; border-radius: 5px"
-                (click)="addToCart(item)"
-              >
-                Add to Cart
-              </button>
-            </div>
+  <div class="navigation">
+    <a routerLink="">Home</a>/ <a href="bookstitch" >Services</a>/Stitching
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <div class="row" *ngFor="let item of productData">
+        <div class="col-md-5">
+          <img [src]="item.img" alt="..." />
+        </div>
+        <div class="col-md-7">
+          <div class="card-body" style="margin-top: 5%; margin-left: 10%">
+            <p class="card-text heading">{{ item.pname }}</p>
+            <p>
+              <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i> <i class="fa-solid fa-star"></i
+              ><i class="fa-solid fa-star"></i>
+            </p>
+            <p class="card-text heading price">{{ item.price1 }}</p>
+            <p class="card-text description">{{ item.pdesc }}</p>
+            <p>
+              <label class="tag">Size Options</label>&nbsp;&nbsp;&nbsp;
+              <select name="size" id="size">
+                <option value="choose" selected class="select">
+                  Choose Option
+                </option>
+                <option value="s" class="select">S</option>
+                <option value="m">M</option>
+                <option value="l">L</option>
+                <option value="xl">XL</option>
+                <option value="xxl">XXL</option>
+              </select>
+            </p>
+            <p class="price">{{item.price}}</p>
+            <br />
+            <input
+              type="number"
+              name="quantity"
+              [(ngModel)]="quantity"
+              style="width: 75px"
+              min="1"
+              max="25"
+            />&nbsp;
+            <button
+              class="btn btn-danger"
+              style="width: 108px; border-radius: 5px"
+              (click)="addToCart(item)"
+            >
+              Add to Cart
+            </button>
           </div>
         </div>
-  
-        <br /><br /><br /><br />
-  
-        <div style="margin-left: 40px">
-          <nav>
-            <div class="nav nav-tabs" id="nav-tab" role="tablist">
-              <button
-                class="nav-link active"
-                id="nav-home-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-home"
-                type="button"
-                role="tab"
-                aria-controls="nav-home"
-                aria-selected="true"
-              >
-                Description
-              </button>
-              <button
-                class="nav-link"
-                id="nav-profile-tab"
-                data-bs-toggle="tab"
-                data-bs-target="#nav-profile"
-                type="button"
-                role="tab"
-                aria-controls="nav-profile"
-                aria-selected="false"
-              >
-                Review
-              </button>
-            </div>
-          </nav>
-          <div class="tab-content" id="nav-tabContent">
-            <div
-              class="tab-pane fade show active"
-              id="nav-home"
-              role="tabpanel"
-              aria-labelledby="nav-home-tab"
+      </div>
+
+      <br /><br /><br /><br /><br><br>
+
+      <div style="margin-left: 60px;margin-right: 60px;">
+        <nav>
+          <div class="nav nav-tabs" id="nav-tab" role="tablist">
+            <button
+              class="nav-link active"
+              id="nav-home-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-home"
+              type="button"
+              role="tab"
+              aria-controls="nav-home"
+              aria-selected="true"
             >
-            ......
-            </div>
-            <div
-              class="tab-pane fade"
-              id="nav-profile"
-              role="tabpanel"
-              aria-labelledby="nav-profile-tab"
+              Description
+            </button>
+            <button
+              class="nav-link"
+              id="nav-profile-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#nav-profile"
+              type="button"
+              role="tab"
+              aria-controls="nav-profile"
+              aria-selected="false"
             >
-            ......
-            </div>
+              Review
+            </button>
+          </div>
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+          <div
+            class="tab-pane fade show active"
+            id="nav-home"
+            role="tabpanel"
+            aria-labelledby="nav-home-tab"
+          >
+          <p class="desc">Product Description</p>
+          <p class="pdesc">
+          If you are looking for wonderful dress designs stitching, FabStitch introduces a range of 
+          choices. You can easily get your dress stitched / customized to suit your figure and style.
+          <br><br>
+
+          Place order for popular designer blouses online for an incredible online shopping experience. 
+          Whether you choose a blouse with or without lining, padded blouse or pick the princess cut 
+          blouse, FabStitch give you the perfect stitching experience, fitting and shape of the blouse.
+           Currently available in Bangalore.</p>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="nav-profile"
+            role="tabpanel"
+            aria-labelledby="nav-profile-tab"
+          >
+          <app-review></app-review>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <br>
-<br>
+</div>
+
+<!-- <div style="background-color: white;"><br><br><br><br>
+  <div style="background-color: rgb(28, 174, 148);" class="row">
+      <br><br><br>
+      <div class="col-sm">
+          <p style="color:white;margin-left:70px;">Copyright 2015 - 2022 © fabstitch.in</p>
+      </div>
+      <div class="col-sm">
+          <ul>
+              <a href="#" style=" color: rgb(255, 255, 255);" class="home">FAQ</a>
+              |
+              <a href="terms-of-services" style=" color: rgb(255, 255, 255);">Terms of Services </a>
+              |
+              <a href="privacy-policy" style="color: rgb(255, 255, 255);">Privacy Policy </a>
+              | 
+              <a style="color: rgb(255, 255, 255);">Call us @ +91-9902953403</a>
+          
+          </ul> 
+
+      </div>
+  </div>
+</div> -->
 <app-footer></app-footer>

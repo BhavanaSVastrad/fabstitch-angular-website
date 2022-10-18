@@ -134,5 +134,20 @@
       "quantity": 1,
       "subtotal": 1
     }
+  ],
+  "review": [
+    {
+      "id": 1,
+      "name": "Neha",
+      "rating": 3,
+      "data": "Stitching quality is good"
+    },
+    {
+      "id": 2,
+      "name": "John",
+      "rating": 4,
+      "data": "Satisfied with the stitching service"
+    }
+    
   ]
 }

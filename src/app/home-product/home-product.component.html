@@ -1,0 +1,180 @@
+<div style="background-color: #ECECEC; box-sizing: border-box; height: 600px;">
+    <div>
+
+        <div> 
+           
+                <div class="row">
+                 
+                    <div class="col-sm-15">			
+                        <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                            <div class="works"><p>SERVICES</p></div>
+                            <h2 style=" font-weight:bolder; font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; color:#1abc9c;">Feature Products</h2>
+                           
+                            <ol class="carousel-indicators">
+                               
+                            </ol>   
+                       
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="row"   *ngFor="let products of productsL" style="float: left; ">
+                                        <div class="col-sm-16">
+                                            <div  style="background-color: #ECECEC;">
+
+                                                <img [src]="products.img" class="card-img-top" alt="product"  height="200px" width="200px" style="padding:10px ;">
+                                                <div class="card-body" >
+                                                    <p style="padding-left: 25px; color:black; font-size:15px;"> {{ products.pname}}</p>
+                                                    <p class="price" style="padding-left: 25px; color:black; font-size:15px;">{{ products.price1 }}</p>
+                                                   
+                                                    <a style="color: white; padding-left: 25px;"
+                                                      class="btn btn-dark mt-2"
+                                                      [routerLink]="['/viewProduct', products.id]"
+                                                      >Select Options</a
+                                                    >
+                                            </div>
+                                            </div>
+                                     
+                                        </div>
+                        
+                                    </div>			
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="row">
+                                        <div class="col-sm-16">
+                                            <div  style="background-color: #ECECEC;">
+                                                <div class="row" style="float:left;">
+                                                     <div class="col-lg-2">
+                                                        <img src="https://assets0.mirraw.com/images/10166921/White_Red_CHoli_Front_large_m.jpg?1649855668"  alt="product"  height="200px" width="200px" style="padding:10px ;" class="products">
+                                                        <div class="card-body" >
+                                                            <p style="padding-left: 25px; color:black; font-size:15px;"> </p>
+                                                            <p class="price" style="padding-left: 25px; color:black; font-size:15px;"></p>
+                                                           
+                                                            <a style="color: white; padding-left: 25px;"
+                                                              class="btn btn-dark mt-2"
+                                                             
+                                                              >Select Options</a
+                                                            >
+                                                    </div>
+                                                    
+                                                    </div>
+                                                     <div class="col-lg-2">
+                                                        <img src="https://i.pinimg.com/564x/ea/3f/19/ea3f19456c8b0f9721a004371d37be49.jpg"  alt="product"  height="200px" width="200px" style="padding-right:50px ; margin-left: 70px;">
+                                                        <div class="card-body" >
+                                                            <p style="padding-left: 25px; color:black; font-size:15px;"> </p>
+                                                            <p class="price" style="padding-left: 25px; color:black; font-size:15px;"></p>
+                                                           
+                                                            <a style="color: white; padding-left: 25px;"
+                                                              class="btn btn-dark mt-2"
+                                                             
+                                                              >Select Options</a
+                                                            >
+                                                            </div>
+                                                   
+                                                   
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <img src="https://4.imimg.com/data4/SG/BT/ANDROID-60830689/product-500x500.jpeg"  alt="product"  height="200px" width="200px" style="padding:10px ; margin-left: 70px;">
+                                                        <div class="card-body" >
+                                                            <p style="padding-left: 25px; color:black; font-size:15px;"> </p>
+                                                            <p class="price" style="padding-left: 25px; color:black; font-size:15px;"></p>
+                                                           
+                                                            <a style="color: white; padding-left: 25px;"
+                                                              class="btn btn-dark mt-2"
+                                                             
+                                                              >Select Options</a
+                                                            >
+                                                            </div>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <img src="https://kulavadhu.com/wp-content/uploads/2021/05/SK145_1024x1024@2x.jpg"  alt="product"  height="200px" width="200px" style="padding:10px ; margin-left: 70px;">
+                                                        <div class="card-body" >
+                                                            <p style="padding-left: 25px; color:black; font-size:15px;"> </p>
+                                                            <p class="price" style="padding-left: 25px; color:black; font-size:15px;"></p>
+                                                           
+                                                            <a style="color: white; padding-left: 25px;"
+                                                              class="btn btn-dark mt-2"
+                                                             
+                                                              >Select Options</a
+                                                            >
+                                                            </div>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <img src="https://img.perniaspopupshop.com/catalog/product/v/v/VVVC122037_1.jpg?impolicy=listingimagedesktop"  alt="product"  height="200px" width="200px" style="padding:10px ; margin-left: 70px;">
+                                                        <div class="card-body" >
+                                                            <p style="padding-left: 25px; color:black; font-size:15px;"> </p>
+                                                            <p class="price" style="padding-left: 25px; color:black; font-size:15px;"></p>
+                                                           
+                                                            <a style="color: white; padding-left: 25px;"
+                                                              class="btn btn-dark mt-2"
+                                                             
+                                                              >Select Options</a
+                                                            >
+                                                            </div>
+                                                    </div>
+                                                    <div class="col-lg-2">
+                                                        <img src="https://oleole.com.bd/assets/uploads/df03fdb41d98cba994a398abbb4a5db8.webp"  alt="product"  height="200px" width="200px" style="padding:10px ; margin-left: 70px;">
+                                                        <div class="card-body" >
+                                                            <p style="padding-left: 25px; color:black; font-size:15px;"> </p>
+                                                            <p class="price" style="padding-left: 25px; color:black; font-size:15px;"></p>
+                                                           
+                                                            <a style="color: white; padding-left: 25px;"
+                                                              class="btn btn-dark mt-2"
+                                                             
+                                                              >Select Options</a
+                                                            >
+                                                            </div>
+                                                    </div>
+                                                </div>
+                                               
+                                             
+                                            </div>
+                                     
+                                        </div>
+                                    </div>			
+                                </div>
+                              
+                             
+                               
+                            </div>
+                           
+                            <a class="carousel-control-prev" href="#myCarousel" data-slide="prev">
+                                <i class="fa fa-chevron-left"></i>
+                            </a>
+                            <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+                                <i class="fa fa-chevron-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+         
+
+        </div>
+    </div>
+</div>
+
+
+<!-- 
+ <div class="row">
+    <div class="col" *ngFor="let products of productsL" >
+     
+        <img [src]="products.img" alt="Card image cap" height="200px" width="200px" >
+     
+        <div class="card-body" >
+          <p> {{ products.pname}}</p>
+          <p class="price">{{ products.price1 }}</p>
+         
+          <a style="color: white;"
+            class="btn btn-dark mt-2"
+            [routerLink]="['/viewProduct', products.id]"
+            >Select Options</a
+          >
+        </div>
+       
+    </div>
+  </div>  -->
+
+
+
+
+
+
+
