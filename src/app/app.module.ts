@@ -25,6 +25,7 @@ import { PrivacyComponent } from './privacy/privacy.component';
 import { FooterComponent } from './footer/footer.component';
 import { HomeProductComponent } from './home-product/home-product.component';
 import { ReviewComponent } from './review/review.component';
+import { ScrollToTopComponent } from './scroll-to-top/scroll-to-top.component';
 
 
 
@@ -50,7 +51,8 @@ import { ReviewComponent } from './review/review.component';
     PrivacyComponent,
     FooterComponent,
     HomeProductComponent,
-    ReviewComponent
+    ReviewComponent,
+    ScrollToTopComponent
 
 
   ],

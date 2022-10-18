@@ -24,14 +24,17 @@
                         <div class="col-sm">
                             <label style="padding-top:10px;color:grey;font-size: large;"><b>First name</b></label>
                             <abbr style="color: red;"class="required" title="required">*</abbr><br>
-                            <input type="text" style="width: 250px;padding: 6px;margin-top:10px;"required>
-                            <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">First name is Required </label><br>
+                            <!--<input type="text" style="width: 250px;padding: 6px;margin-top:10px;"required>-->
+                            <input type="text"  name="firstname" formControlName="firstname"  style="color: rgb(0, 0, 0);margin-left: 0px;border-radius: 0px;width:550px;border-color:rgb(147, 236, 211);width: 250px;padding: 6px;margin-top:10px;"><br>
+                            <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['firstname'].errors?.['required']">First name is Required </label><br>
                         </div>
+
                         <div class="col-sm">
                             <label style="padding-top:10px;color:grey;font-size: large;"><b>Last name</b></label>
                             <abbr style="color: red;"class="required" title="required">*</abbr><br>
-                            <input type="text" style="width: 250px;padding: 6px;margin-top:10px;"required>
-                            <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">Last name is Required</label><br>
+                            <!--<input type="text" style="width: 250px;padding: 6px;margin-top:10px;"required>-->
+                            <input type="text"  name="lastname" formControlName="lastname"  style="color: rgb(0, 0, 0);margin-left: 0px;border-radius: 0px;width:550px;border-color:rgb(147, 236, 211);width: 250px;padding: 6px;margin-top:10px;"><br>
+                            <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['lastname'].errors?.['required']">Last name is Required</label><br>
                         </div>
                     </div>
                     <label style="color:grey;font-size: large;padding-top:10px;"><b>Company Name</b></label>
@@ -40,14 +43,16 @@
                         <div class="col-sm">
                             <label style="padding-top:10px;color:grey;font-size: large;"><b>Email Address</b></label>
                             <abbr style="color: red;"class="required" title="required">*</abbr><br>
-                            <input type="email" style="width: 250px;padding: 6px;margin-top:10px;"required>
-                            <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">Email Address is Required </label><br>
+                            <!--<input type="email" style="width: 250px;padding: 6px;margin-top:10px;"required>-->
+                            <input type="email"  name="useremail" formControlName="useremail"  style="color: rgb(0, 0, 0);margin-left: 0px;border-radius: 0px;width:550px;border-color:rgb(147, 236, 211);width: 250px;padding: 6px;margin-top:10px;"><br>
+                            <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['required']">Email Address is Required </label><br>
                         </div>
                         <div class="col-sm">
                             <label style="padding-top:10px;color:grey;font-size: large;"><b>Phone</b></label>
                             <abbr style="color: red;"class="required" title="required">*</abbr><br>
-                            <input type="number" style="width: 250px;padding: 6px;margin-top:10px;"required>
-                            <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">Phone number is Required </label><br>
+                            <!--<input type="number" style="width: 250px;padding: 6px;margin-top:10px;"required>-->
+                            <input type="number"  name="phone" formControlName="phone" maxlength="10" style="color: rgb(0, 0, 0);margin-left: 0px;border-radius: 0px;width:550px;border-color:rgb(147, 236, 211);width: 250px;padding: 6px;margin-top:10px;"><br>
+                            <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['phone'].errors?.['required']">Phone number is Required </label><br>
                         </div>
                     </div>
                     <label style="padding-top:10px;color:grey;font-size: large;"><b>Country</b></label>
@@ -55,13 +60,15 @@
                     <label style="padding-top:10px;color:grey;font-size: large;"><b>India</b></label><br>
                     <label style="padding-top:10px;color:grey;font-size: large;"><b>Address</b></label>
                     <abbr style="color: red;"class="required" title="required">*</abbr><br>
-                    <input type="address" style="width: 560px;padding: 6px;margin-top:10px;"required placeholder="Street address">
+                    <!--<input type="address" style="width: 560px;padding: 6px;margin-top:10px;"required placeholder="Street address">-->
+                    <input type="text"  name="address" formControlName="address" maxlength="10" style="color: rgb(0, 0, 0);margin-left: 0px;border-radius: 0px;width:550px;border-color:rgb(147, 236, 211);width: 250px;padding: 6px;width: 560px;padding: 6px;margin-top:10px;"><br>
+                    <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['address'].errors?.['required']">Address is Required</label><br>
                     <input type="address" style="width: 560px;padding: 6px;margin-top:10px;"required placeholder="Apartment, suite, unit etc. (optional)">
-                    <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">Address is Required</label><br>
                     <label style="padding-top:10px;color:grey;font-size: large;"><b>Town/City</b></label>
                     <abbr style="color: red;"class="required" title="required">*</abbr><br>
-                    <input type="text" style="width: 560px;padding: 6px;margin-top:10px;"required placeholder="Town/city">
-                    <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">Town/city is Required </label><br>
+                    <!--<input type="text" style="width: 560px;padding: 6px;margin-top:10px;"required placeholder="Town/city">-->
+                    <input type="text"  name="town" formControlName="town" maxlength="10" style="color: rgb(0, 0, 0);margin-left: 0px;border-radius: 0px;width:550px;border-color:rgb(147, 236, 211);width: 250px;padding: 6px;width: 560px;padding: 6px;margin-top:10px;"><br>
+                    <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['town'].errors?.['required']">Town/city is Required </label><br>
                     <div class="row">
                         <div class="col-sm">
                             <label style="padding-top:10px;color:grey;font-size: large;"><b>State/Country</b></label>
@@ -70,19 +77,23 @@
                                 <option value="KA">Karnataka</option>
                                 <option value="OT">Others</option>
                             </select>
-                            <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">State/Country is Required </label><br>
+                            <!--<label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">State/Country is Required </label><br>-->
                         </div>
                         <div class="col-sm">
                             <label style="padding-top:10px;color:grey;font-size: large;"><b>Postcode/Zip</b></label>
                             <abbr style="color: red;"class="required" title="required">*</abbr><br>
-                            <input type="text" style="width: 250px;padding: 6px;margin-top:10px;"required placeholder="Postcode/zip">
-                            <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['password'].errors?.['required']">Postcode is Required</label><br>
+                            <!--<input type="text" style="width: 250px;padding: 6px;margin-top:10px;"required placeholder="Postcode/zip">-->
+                            <input type="number"  name="postcode" formControlName="postcode" maxlength="10" style="color: rgb(0, 0, 0);margin-left: 0px;border-radius: 0px;width:250px;border-color:rgb(147, 236, 211);padding: 6px;margin-top:10px;"><br>
+                            <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['postcode'].errors?.['required']">Postcode is Required</label><br>
                         </div>
                     </div>
                     <input type="checkbox" value="msg"><label style="padding-top:10px;color:grey;font-size: large;padding-left: 10px;"> Get our news by sms</label><br>
-                    <input type="checkbox" value="msg"><label style="padding-top:10px;color:grey;font-size: large;padding-left: 10px;"> Create an account?</label>
+                    <label style="padding-top:10px;color:grey;font-size: large;padding-left: 10px;"><a href="register"> Create an account?</a></label>
                     <h3 style="color: rgb(44, 209, 209);padding-top:10px;">Your Orders</h3>
-    
+                    <!--orders-->
+                    
+                    
+
     
                 </div>
                 <div class="col-sm">
@@ -97,19 +108,28 @@
                 </div>
             </div>
 
-            <ul>
-                <input type="checkbox" value="msg"><label style="padding-top:10px;color:grey;font-size: large;padding-left: 10px;">
-                <a style="margin-left: 10px; color: rgb(52, 144, 144);">I've read the </a>
-                <a href='terms-of-services' style=" color: rgb(79, 200, 200);" class="home">/terms and conditions</a>
-            </label>
-            </ul> 
-            
-
-            <button type="submit" href="" class="btn btn-danger m-3" style="border-radius:2px;background-color:rgb(232, 32, 32);color: white;margin-left: 20px;padding: 10px;">Place Order</button>
-            <br><br>
-            <label style="margin-left:20px;color: rgb(182, 171, 20);border-color: rgb(176, 176, 16);"  class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['required']">Validation errors occurred. Please confirm the fields and submit it again.</label><br>
-               
-                </form> 
+            <div style="background-color: rgb(214, 214, 214);margin-bottom: 10px;">
+                <ul style="padding-top: 10px;">
+                    <input type="checkbox"   name="pay" formControlName="pay" value="true" style="margin-right:10px;" checked>
+                    <label>Cash on Delivery</label>
+                    <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['pay'].errors?.['required']">Payment must be on Delivery </label>
+                </ul>
+                <ul>
+                    <label style="padding-top:10px;color:grey;font-size: large;">
+                    <a style="margin-left: 10px; color: rgb(52, 144, 144);">I've read the </a>
+                    <a href='terms-of-services' style=" color: rgb(79, 200, 200);" class="home">/terms and conditions</a>
+                    <input type="checkbox"   name="terms" formControlName="terms" value="true" style="margin-left:10px;">
+                    
+                    <button type="submit" href="" class="btn btn-danger m-3" style="border-radius:2px;background-color:rgb(232, 32, 32);color: white;margin-left: 20px;padding: 10px;">Place Order</button>
+                <br>
+                <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['terms'].errors?.['required']">You must accept our terms and conditions </label>
+                
+                </label>
+                </ul> 
+                 
+            </div> 
+            <label style="margin-left:20px;color: rgb(182, 171, 20);border-color: rgb(176, 176, 16);"  class="error ng-binding" *ngIf="submitted && f['useremail'].errors?.['required']">Validation errors occurred. Please confirm the fields and submit it again.</label><br>   
+        </form> 
 
                 
 

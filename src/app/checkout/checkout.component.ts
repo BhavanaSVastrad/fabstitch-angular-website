@@ -26,7 +26,16 @@ export class CheckoutComponent implements OnInit {
   ngOnInit(): void {
     this.loginForm = this.formBuilder.group({
       useremail: ['', [Validators.required, Validators.email,Validators.pattern('^[a-z0-9._%+-]+@[a-z0-9.-]+\\.[a-z]{2,4}$')]],
-      password: ['', [Validators.required, Validators.minLength(6)]]
+      password: ['', [Validators.required, Validators.minLength(6)]],
+      firstname: ['', [Validators.required, Validators.minLength(20)]],
+      lastname: ['', [Validators.required, Validators.minLength(20)]],
+      phone: ['', [Validators.required]],
+      address: ['', [Validators.required, Validators.maxLength(30)]],
+      town: ['', [Validators.required, Validators.maxLength(20)]],
+      postcode: ['', [Validators.required, Validators.maxLength(6)]],
+      terms: ['', [Validators.required, Validators.requiredTrue]],
+      pay: ['', [Validators.required, Validators.requiredTrue]]
+
         });
   }
 

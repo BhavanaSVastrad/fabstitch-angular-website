@@ -149,6 +149,24 @@
       "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/western_dresses-200x200.png",
       "quantity": 5,
       "subtotal": 1
+    },
+    {
+      "id": 7,
+      "pname": "Alteration services",
+      "pdesc": "Backed by our skilled professionals, we are involved in providing Alteration Stitching Service for various dresses",
+      "price": 800,
+      "img": "http://www.fabstitch.in/wp-content/uploads/2015/11/Sewing-and-Alteration-150x150.jpg",
+      "quantity": 1,
+      "subtotal": 1
+    },
+    {
+      "id": 5,
+      "pname": "Designer Blouse stitching",
+      "pdesc": "Reckoned as one of the involved companies of the industry, we are extremely immersed in providing Ladies Blouse stitch.",
+      "price": 2500,
+      "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/womens-cloth-stitching-11-200x200.png",
+      "quantity": 1,
+      "subtotal": 1
     }
   ],
   "review": [

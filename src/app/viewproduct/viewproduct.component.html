@@ -7,7 +7,9 @@
     <div class="card">
       <div class="row" *ngFor="let item of productData">
         <div class="col-md-5">
-          <img [src]="item.img" alt="..." />
+          
+          <img class="zoom" [src]="item.img" alt="..." />
+
         </div>
         <div class="col-md-7">
           <div class="card-body" style="margin-top: 5%; margin-left: 10%">
@@ -137,4 +139,5 @@
       </div>
   </div>
 </div> -->
+
 <app-footer></app-footer>
