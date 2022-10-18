@@ -55,6 +55,13 @@
       "password": "123456",
       "mobile": "8694830444",
       "id": 12
+    },
+    {
+      "username": "DeepaS",
+      "useremail": "deepa@gmail.com",
+      "password": "Deepa123",
+      "mobile": "8694830444",
+      "id": 13
     }
   ],
   "product": [
@@ -133,6 +140,15 @@
       "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/Anarkali-Custmized-200x200.jpg",
       "quantity": 1,
       "subtotal": 1
+    },
+    {
+      "id": 6,
+      "pname": "Western Wear Stitch",
+      "pdesc": "Reckoned as one of the involved companies of the industry, we are extremely immersed in providing Ladies Western wear stitch",
+      "price": 3000,
+      "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/western_dresses-200x200.png",
+      "quantity": 5,
+      "subtotal": 1
     }
   ],
   "review": [
@@ -148,6 +164,5 @@
       "rating": 4,
       "data": "Satisfied with the stitching service"
     }
-    
   ]
 }

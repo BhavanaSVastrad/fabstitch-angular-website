@@ -53,7 +53,7 @@
               <input type="number" name="quantity" [(ngModel)]="item.quantity" style="width:50px;border-color: rgb(84, 235, 175);" min="1" max="25">
             </div>
             <div style="padding-top: 50px;" class="col-sm">
-              <h3> {{subtotal(cart)|currency:'INR'}}</h3>
+              <h3> {{item.price * item.quantity|currency:'INR'}}</h3>
              
             </div>
              
@@ -67,25 +67,34 @@
               <input type="submit" class="coupon"style="margin-left: 190px;background-color: black;color: white;padding: 5px;border-radius: 2px;"class="button" name="update_cart" value="Apply Coupon">
             </div><br> -->
            <a class="btn btn-dark m-3" style="background-color:rgb(46, 108, 46);color:white;" (click)="onClick()" >Shop More</a>
-            <a class="btn btn-dark m-3" style="background-color:rgb(53, 117, 53);color:white;"  href="https://rzp.io/i/C6vaJ6kg" target="_blank" >CheckOut</a>
+
           </div>   
           <div class="col-lg-5">
             <div>
-             <h3> Total: {{totalPrice(cart)|currency:'INR'}}</h3><br>
-            <input type="submit" class="coupon"style="margin-left: 230px;background-color: black;color: white;padding: 5px;border-radius: 2px;"class="button" name="update_cart" value="Update Cart">
+             <!-- <h3> Total: {{totalPrice(cart)|currency:'INR'}}</h3><br> -->
+            <!-- <input type="submit" class="coupon"style="margin-left: 230px;background-color: black;color: white;padding: 5px;border-radius: 2px;"class="button" name="update_cart" value="Update Cart"> -->
               <br>
             </div><br>
           </div><hr>
         </div>
       </div>
-  
-      <!--cart total-->
+    <div >
+    <!--cart total-->
+    <div style="margin-left: 200px;">
       <h2 style="margin-left: 555px;color: rgb(174, 174, 174);">Cart Totals</h2>
-      <h3 style="margin-left: 560px;color: rgb(0, 0, 0);">Subtotal {{totalPrice(cart)}}</h3>
+      <!-- <h3 style="margin-left: 560px;color: rgb(0, 0, 0);">Subtotal {{totalPrice(cart)}}</h3> -->
       <h3 style="margin-left: 560px;color: rgb(154, 154, 154);">________________________________________</h3>
       <h2 style="margin-left: 560px;color: rgb(0, 0, 0);">Total :{{totalPrice(cart)}}</h2>
-      <a class="home" class="checkout" class="btn btn-danger m-3" href='checkout' target="_blank" style="margin-bottom:20px;border-radius:3px;padding:7px;width:530px;background-color:rgb(215, 44, 44);color:white;border-color:rgb(215, 44, 44);font-size: 17px;" >Proceed to Checkout</a>
+    </div>
     
+    <div style="margin-left: 450px; padding-left: 300px;">
+     
+      <a class="home" class="checkout" class="btn btn-danger " href='checkout' target="_blank" style="margin-bottom:20px;border-radius:3px;width:530px;background-color:rgb(215, 44, 44);color:white;border-color:rgb(215, 44, 44);font-size: 17px; " >Proceed to Checkout</a>
+    </div>
+   
+
+      </div>
+     
 
   </div>
   
