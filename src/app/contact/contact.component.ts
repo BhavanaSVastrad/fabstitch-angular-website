@@ -36,12 +36,12 @@ export class ContactComponent implements OnInit {
     if (this.loginForm.invalid) {
       return ;
     }
-    this.http.get<any>(this.userapi)
-    .subscribe(res=>{
-      const user=res.find((a:any)=>{
-        return a.useremail === this.loginForm.value.useremail && a.password=== this.loginForm.value.password
-      });
-      if(user){
+    // this.http.get<any>(this.userapi)
+    // .subscribe(res=>{
+    //   const user=res.find((a:any)=>{
+    //     return a.useremail === this.loginForm.value.useremail && a.password=== this.loginForm.value.password
+    //   });
+      else{
         const Toast = Swal.mixin({
           toast: true,
           position: 'top',
@@ -52,27 +52,13 @@ export class ContactComponent implements OnInit {
     
         Toast.fire({
           icon: 'success',
-          title: 'Login Successful'
+          title: '  Submitted Successfully'
         })
         this.loginForm.reset();
         this.router.navigate([''])
         //this.userService.validateAuth(true);
-      }else{
-        const Toast = Swal.mixin({
-          toast: true,
-          position: 'top',
-          showConfirmButton: false,
-          timer: 3000,
-          timerProgressBar: true,
-        })
-    
-        Toast.fire({
-          icon: 'error',
-          title: 'User not found'
-        })       
-        //this.userService.validateAuth(false);
       }
-    })
+    
   }
 
 }

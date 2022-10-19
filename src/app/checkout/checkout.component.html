@@ -6,14 +6,14 @@
         </ul>
         <div class="row">
             <div class="col-xl"style="background-color: white;margin:50px;margin-left:90px;width:1300px;">
-            <form  [formGroup]="loginForm" (ngSubmit)="login()">
+            <form  [formGroup]="loginForm" >
                 <br>
-            <div style="padding: 20px;background-color: rgb(207, 207, 207);">
+            <!-- <div style="padding: 20px;background-color: rgb(207, 207, 207);">
                 <a style="padding: 10px;">Returning Customer?</a>
                
               
               <a href="login">  Click here to login</a>
-            </div>
+            </div> -->
          
             <br><br>
             <!--content-->
@@ -87,9 +87,9 @@
                             <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['postcode'].errors?.['required']">Postcode is Required</label><br>
                         </div>
                     </div>
-                    <input type="checkbox" value="msg"><label style="padding-top:10px;color:grey;font-size: large;padding-left: 10px;"> Get our news by sms</label><br>
-                    <label style="padding-top:10px;color:grey;font-size: large;padding-left: 10px;"><a href="register"> Create an account?</a></label>
-                    <h3 style="color: rgb(44, 209, 209);padding-top:10px;">Your Orders</h3>
+                    <!-- <input type="checkbox" value="msg"><label style="padding-top:10px;color:grey;font-size: large;padding-left: 10px;"> Get our news by sms</label><br>
+                    <label style="padding-top:10px;color:grey;font-size: large;padding-left: 10px;"><a href="register"> Create an account?</a></label> -->
+                    <!-- <h3 style="color: rgb(44, 209, 209);padding-top:10px;">Your Orders</h3> -->
                     <!--orders-->
                     
                     
@@ -109,18 +109,14 @@
             </div>
 
             <div style="background-color: rgb(214, 214, 214);margin-bottom: 10px;">
-                <ul style="padding-top: 10px;">
-                    <input type="checkbox"   name="pay" formControlName="pay" value="true" style="margin-right:10px;" checked>
-                    <label>Cash on Delivery</label>
-                    <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['pay'].errors?.['required']">Payment must be on Delivery </label>
-                </ul>
+                
                 <ul>
                     <label style="padding-top:10px;color:grey;font-size: large;">
                     <a style="margin-left: 10px; color: rgb(52, 144, 144);">I've read the </a>
                     <a href='terms-of-services' style=" color: rgb(79, 200, 200);" class="home">/terms and conditions</a>
                     <input type="checkbox"   name="terms" formControlName="terms" value="true" style="margin-left:10px;">
                     
-                    <button type="submit" href="" class="btn btn-danger m-3" style="border-radius:2px;background-color:rgb(232, 32, 32);color: white;margin-left: 20px;padding: 10px;">Place Order</button>
+                    <button type="submit" href="" class="btn btn-danger m-3" style="border-radius:2px;background-color:rgb(232, 32, 32);color: white;margin-left: 20px;padding: 10px;"   routerLink="order">Place Order</button>
                 <br>
                 <label style="margin-left:20px;color: red ;" class="error ng-binding" *ngIf="submitted && f['terms'].errors?.['required']">You must accept our terms and conditions </label>
                 

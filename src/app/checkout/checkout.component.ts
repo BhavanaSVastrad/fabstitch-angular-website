@@ -38,50 +38,67 @@ export class CheckoutComponent implements OnInit {
 
         });
   }
-
-  login(){
-    this.submitted = true;
-    if (this.loginForm.invalid) {
-      return ;
-    }
-    this.http.get<any>(this.userapi)
-    .subscribe(res=>{
-      const user=res.find((a:any)=>{
-        return a.useremail === this.loginForm.value.useremail && a.password=== this.loginForm.value.password
-      });
-      if(user){
-        const Toast = Swal.mixin({
-          toast: true,
-          position: 'top',
-          showConfirmButton: false,
-          timer: 3000,
-          timerProgressBar: true,
-        })
-    
-        Toast.fire({
-          icon: 'success',
-          title: 'Login Successful'
-        })
-        this.loginForm.reset();
-        this.router.navigate([''])
-        //this.userService.validateAuth(true);
-      }else{
-        const Toast = Swal.mixin({
-          toast: true,
-          position: 'top',
-          showConfirmButton: false,
-          timer: 3000,
-          timerProgressBar: true,
-        })
-    
-        Toast.fire({
-          icon: 'error',
-          title: 'User not found'
-        })       
-        //this.userService.validateAuth(false);
-      }
-    })
+onclick(){
+ 
+  if (this.loginForm.invalid) {
+    return ;
   }
-
-
+  // this.http.get<any>(this.userapi)
+  // .subscribe(res=>{
+  //   const user=res.find((a:any)=>{
+  //     return a.useremail === this.loginForm.value.useremail && a.password=== this.loginForm.value.password
+  //   });
+    else{
+      const Toast = Swal.mixin({
+        toast: true,
+        position: 'top',
+        showConfirmButton: false,
+        timer: 3000,
+        timerProgressBar: true,
+      })
+  
+      Toast.fire({
+        icon: 'success',
+        title: 'Submitted Successfully'
+      })
+      this.loginForm.reset();
+      this.router.navigate([''])
+      //this.userService.validateAuth(true);
+    }
+  
 }
+}
+
+ 
+
+  // login(){
+  //   this.submitted = true;
+  //   if (this.loginForm.invalid) {
+  //     return ;
+  //   }
+  //   // this.http.get<any>(this.userapi)
+  //   // .subscribe(res=>{
+  //   //   const user=res.find((a:any)=>{
+  //   //     return a.useremail === this.loginForm.value.useremail && a.password=== this.loginForm.value.password
+  //   //   });
+  //     else{
+  //       const Toast = Swal.mixin({
+  //         toast: true,
+  //         position: 'top',
+  //         showConfirmButton: false,
+  //         timer: 3000,
+  //         timerProgressBar: true,
+  //       })
+    
+  //       Toast.fire({
+  //         icon: 'success',
+  //         title: '  Submitted Successfully'
+  //       })
+  //       this.loginForm.reset();
+  //       this.router.navigate([''])
+  //       //this.userService.validateAuth(true);
+  //     }
+    
+  // 
+
+
