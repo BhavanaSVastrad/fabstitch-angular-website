@@ -14,6 +14,7 @@
           <h3></h3>
         </div>
         
+        
         <div  class="col-5" style="margin-left: 40px;">
           <h3>Product </h3>
         </div>
@@ -32,9 +33,9 @@
       <hr>
       <div class="container" *ngFor="let item of cart">
         <div class="row">
-          <div class="col">
-            <!-- <div style="margin-left: 10px;padding-top: 40px;">{{item.totalPrice}}</div> -->
-            <button class="cross" class="btn m-3" (click)="delete(item)" style="padding: 2px;padding-top: 30px;"><i class="cross" style="color: rgb(255, 255, 255);background-color: red;"class="fa-solid fa-square-xmark"></i></button>
+          <div class="col-sm"> 
+            <div style="margin-left: 10px;padding-top: 40px;">{{item.totalPrice}}</div>
+            <button class="cross" class="btn m-3" (click)="delete(item)"><i class="cross" style="color: rgb(255, 255, 255);background-color: red;"class="fa-solid fa-square-xmark"></i></button>
           </div>
           <div style="margin-left: -150px;padding-left: 100px;padding-right:100px;padding-top: 50px; " class="col">
             <img src={{item.img}} >
@@ -72,7 +73,7 @@
         <div class="col-lg-5">
           <div>
            <!-- <h3> Total: {{totalPrice(cart)|currency:'INR'}}</h3><br> -->
-          <!-- <input type="submit" class="coupon"style="margin-left: 230px;background-color: black;color: white;padding: 5px;border-radius: 2px;"class="button" name="update_cart" value="Update Cart"> -->
+          <input type="submit" class="coupon"style="margin-left: 230px;background-color: black;color: white;padding: 5px;border-radius: 2px;"class="button" name="update_cart" value="Update Cart">
             <br>
           </div><br>
         </div><hr>
