@@ -15,6 +15,8 @@ import { ViewproductComponent } from './viewproduct/viewproduct.component';
 import { CartItemsComponent } from './cartitem/cartitem.component';
 import { CheckoutComponent } from './checkout/checkout.component';
 import { PrivacyComponent } from './privacy/privacy.component';
+import { AuthGuard } from './auth.guard';
+
 const routes: Routes = [
   {path:'',component:HomeComponent},
   {path:'contact',component:ContactComponent},
@@ -29,7 +31,7 @@ const routes: Routes = [
    {path:'viewProduct/:id',component:ViewproductComponent}, 
    {path:'bookstitch',component:ProductComponent},
    {path:'order',component:CartItemsComponent},
-   {path:'checkout',component:CheckoutComponent},
+   {path:'checkout',component:CheckoutComponent,canActivate:[AuthGuard]},
    {path:'privacy',component:PrivacyComponent}
 ];
 

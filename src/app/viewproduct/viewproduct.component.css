@@ -2,14 +2,8 @@
     /* margin: 50px; */
     height: 1600px;
 }
-img{
-    height: 470px;
-    margin-top: 7%;
-    margin-left: 7%;
-}
-.zoom:hover{
-    transform: scale(1.1);
-}
+
+
 .heading{
     font-family: "Montserrat", Arial, sans-serif;
     font-size: 1.5em;
@@ -80,4 +74,19 @@ a{
     text-align: justify;
     
 }
+.zoom {
+    height: 470px;
+  
+    width: 470px;
+    overflow: hidden;
+    margin: 0 auto;
+}
 
+.zoom img {
+    width: 100%;
+    transition: 0.5s all ease-in-out;
+}
+
+.zoom:hover img {
+    transform: scale(1.5);
+}

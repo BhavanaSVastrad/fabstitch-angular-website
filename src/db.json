@@ -133,38 +133,11 @@
       "subtotal": 1
     },
     {
-      "id": 3,
-      "pname": "Salwar suit Stitch",
-      "pdesc": "Being one of the renowned firms in the industry, we involved in providing a high-quality array of salwar stitching.",
-      "price": 1000,
-      "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/Anarkali-Custmized-200x200.jpg",
-      "quantity": 1,
-      "subtotal": 1
-    },
-    {
       "id": 6,
       "pname": "Western Wear Stitch",
       "pdesc": "Reckoned as one of the involved companies of the industry, we are extremely immersed in providing Ladies Western wear stitch",
       "price": 3000,
       "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/western_dresses-200x200.png",
-      "quantity": 5,
-      "subtotal": 1
-    },
-    {
-      "id": 7,
-      "pname": "Alteration services",
-      "pdesc": "Backed by our skilled professionals, we are involved in providing Alteration Stitching Service for various dresses",
-      "price": 800,
-      "img": "http://www.fabstitch.in/wp-content/uploads/2015/11/Sewing-and-Alteration-150x150.jpg",
-      "quantity": 1,
-      "subtotal": 1
-    },
-    {
-      "id": 5,
-      "pname": "Designer Blouse stitching",
-      "pdesc": "Reckoned as one of the involved companies of the industry, we are extremely immersed in providing Ladies Blouse stitch.",
-      "price": 2500,
-      "img": "http://www.fabstitch.in/wp-content/uploads/2015/01/womens-cloth-stitching-11-200x200.png",
       "quantity": 1,
       "subtotal": 1
     }

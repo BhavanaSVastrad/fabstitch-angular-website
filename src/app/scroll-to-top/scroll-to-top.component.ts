@@ -59,4 +59,3 @@ gotoTop() {
 }
   ngOnInit() {}
 }
-

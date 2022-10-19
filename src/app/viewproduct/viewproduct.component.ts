@@ -5,6 +5,8 @@ import { Product } from '../product';
 import { CartService } from '../cart.service';
 import { Cartitem } from '../cartitem';
 import Swal from 'sweetalert2';
+// import { UserService } from '../user.service';
+
 @Component({
   selector: 'app-viewproduct',
   templateUrl: './viewproduct.component.html',
@@ -12,7 +14,8 @@ import Swal from 'sweetalert2';
 })
 export class ViewproductComponent implements OnInit {
 
-  constructor(private router:Router,private api:ViewService,private route:ActivatedRoute,private cartsvc:CartService) { }
+  constructor(private api:ViewService,private route:ActivatedRoute,
+    private cartsvc:CartService, private router:Router) { }
   cart:Cartitem={
     id:0,
     pname:'',
@@ -25,8 +28,10 @@ export class ViewproductComponent implements OnInit {
     subtotal:1  
   }
   quantity:number=1;
+  // auth:boolean=false;
 
   addToCart(product:any){
+    // if(this.auth){
     this.cart.pname=product.pname;
     this.cart.pdesc=product.pdesc;
     this.cart.price=product.price;
@@ -50,12 +55,12 @@ export class ViewproductComponent implements OnInit {
       title: 'Item added successfully'
     })
     this.cartsvc.getCount();
+  
+ 
   }
   //Input Class Decorator
   @Input()product:any
 
- 
- 
 
   productData: any;
   productId!:number;
@@ -70,6 +75,14 @@ export class ViewproductComponent implements OnInit {
     this.api.getProductsById(this.productId).subscribe(products=>{
       this.productData=products as Product
     })
+
+    // this.authService.authSubject.subscribe(
+    //   data => 
+    //   {
+    //     console.log('auth inside nav component: ' + data);
+    //     this.auth = data;
+    //   }
+    // );
 
 
     // this.api.getProductDetails().subscribe(

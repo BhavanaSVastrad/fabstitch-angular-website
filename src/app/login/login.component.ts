@@ -1,4 +1,3 @@
-
 import { HttpClient } from '@angular/common/http';
 import { error } from '@angular/compiler/src/util';
 import { Component, OnInit } from '@angular/core';
@@ -56,7 +55,7 @@ get f() { return this.loginForm.controls; }
           title: 'Login Successful'
         })
         this.loginForm.reset();
-        this.router.navigate([''])
+        this.router.navigate(['order'])
         this.userService.validateAuth(true);
       }else{
         const Toast = Swal.mixin({
